@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+.loginCss {
+	text-align: center;
+}
+
+.formCss {
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#borderCss {
+	position: fixed;
+	top: 35%;
+	left: 62%;
+}
+
+.divCss {
+	position: fixed;
+	left: 60%;
+	top: 25%;
+	width: 40%;
+	background-image: url("../image/13b1OOOPIC17.jpg");
+	width: 30%;
+	height: 35%;
+}
+
+.backimage {
+	background-image: background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.indexCss {
+	position: fixed;
+	bottom: 10%;
+	left: 40%;
+	background-image: url("../image/7572043_164354514154_2.jpg");
+	background-repeat: no-repeat;
+	width: 18%;
+	height: 28%;
+	background-size: contain;
+}
+
+.indexCSSh3 {
+	position: fixed;
+	top: 70%;
+}
+
+#textCss {
+	position: fixed;
+	top: 10%;
+	left: 33%;
+	text-align: center;
+	font-family: 华文行楷;
+	font-size: 50px;
+}
+
+#indexColor {
+	background-image: url("../image/pic1102.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.loginDivCss {
+	position: fixed;
+	top: 20%;
+	bottom: 20%;
+	background-color: #8080ff;
+}
+
+.box ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.box li {
+	float: left;
+	width: 150px;
+	height: 190px;
+}

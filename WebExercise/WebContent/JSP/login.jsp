@@ -7,6 +7,12 @@
 
 <title>Insert title here</title>
 <link rel="stylesheet" href="../CSS/login.css" type="text/css">
+<script type="text/javascript">
+function pass(){
+	alert("用户名chenpanpan 密码12345");
+}
+
+</script>
 </head>
 <body style="background-color: yellow;">
 <div>
@@ -38,6 +44,11 @@
 					<td></td>
 					<td ><input name="submit" type="submit" value="登陆">&nbsp;&nbsp;&nbsp;
 					<input name="reset" type="reset"></td>
+					
+				</tr>
+				<tr >
+				<td colspan="2"><input name="button"type="button" style="  margin-left: 50px;"
+				 onclick="pass()" value="点击获取密码"></td>
 				</tr>
 			</table>
 		</form>

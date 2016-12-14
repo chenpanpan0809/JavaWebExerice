@@ -8,11 +8,11 @@
 </head>
 <body>
 	<%
-		if (null != session.getAttribute("userid")) {
+		if (null != request.getAttribute("userid")) {
 	%>
 
 	<h3 style="text-align: center;">
-		欢迎<%=session.getAttribute("userid")%>用户光临本系统
+		欢迎<%=request.getAttribute("userid")%>用户光临本系统
 
 	</h3>
 	

@@ -24,7 +24,7 @@ function pass(){
 
 	<div class="divCss">
 
-		<form action="" method="post" class="loginCss">
+		<form action="<%=request.getContextPath() %>/servlet/EnterRequest" method="post" class="loginCss">
 			
 			<table border="0" id="borderCss">
 				<tr>
@@ -54,7 +54,7 @@ function pass(){
 		</form>
 	</div>
 	
-	<%
+<%-- 	<%
 		String name = request.getParameter("username");
 		String password = request.getParameter("password");
 		if ("chenpanpan".equals(name) && "12345".equals(password)) {
@@ -84,7 +84,7 @@ function pass(){
 	%>
 	<% 
 }
- %>
+ %> --%>
 
 </body>
 </html>

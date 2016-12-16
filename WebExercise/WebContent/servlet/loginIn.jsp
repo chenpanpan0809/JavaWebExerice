@@ -42,7 +42,7 @@ function pass(){
 				<tr></tr>
 				<tr>
 					<td></td>
-					<td ><input name="submit" type="submit" value="注册">&nbsp;&nbsp;&nbsp;
+					<td ><input name="submit" type="submit" value="登陆">&nbsp;&nbsp;&nbsp;
 					<input name="reset" type="reset"></td>
 					
 				</tr>

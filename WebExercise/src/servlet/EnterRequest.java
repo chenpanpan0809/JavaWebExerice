@@ -35,27 +35,18 @@ public class EnterRequest extends HttpServlet {
 		String name = request.getParameter("username");
 		String psword = request.getParameter("password");
 		if ("chenpanpan".equals(name) && "12345".equals(psword)) {
-			request.setAttribute("userid", name);
-			ServletContext context =getServletContext();
-			RequestDispatcher rd = context.getRequestDispatcher("/servlet/welcom.jsp");
-			rd.forward(request, response);
+			/*request.getSession().setAttribute("name", name);*/
+			/*ServletContext context =getServletContext();
+			RequestDispatcher rd = context.getRequestDispatcher("/servlet/loginWindow2.html");
+			rd.forward(request, response);*/
+			response.sendRedirect("/WebExercise/servlet/loginWindow2.html");
 			
 		}
-		/*else if (name==null||psword==null) {
-			PrintWriter out = response.getWriter();
-			out.println("<html>");
-			out.println("<head><title>login</title></head>");
-			out.println("<body>");
-			out.println("<h3><center>请输入密码<center></h3>");
-			out.println("</body>");
-			out.println("</html>");
-			out.close();
-			
-		}*/
 		else {
-			RequestDispatcher rd = request.getRequestDispatcher("/servlet/loginWindow.html");
-			rd.include(request, response);
-			PrintWriter out = response.getWriter();
+			/*RequestDispatcher rd = request.getRequestDispatcher("/servlet/loginOut.jsp");
+			rd.include(request, response);*/
+			response.sendRedirect("/WebExercise/servlet/loginOut.jsp");
+			
 		}
 	}
 

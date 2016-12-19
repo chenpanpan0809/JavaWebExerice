@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#box {
+	background-color: #ddbbff;
+	height: 100%;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #fddbf9;
+	height: 100px;
+}
+
+#title {
+	color: #cfbd1d; float : left;
+	font-family: 华文行楷;
+	font-size: 40px;
+	margin-top: 30px;
+	margin-left: 150px;
+	float: left;
+}
+
+#blank {
+	background-color: white;
+	height: 10px;
+
+}
+
+#navi {
+	background-color: #95caff;
+	margin: 0;
+	height: 22px;
+	width: 100%;
+	float: left;
+}
+#lise{
+	margin-left:170px;
+	
+}
+
+li {
+	margin: 0;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid red;
+}
+
+#lis {
+	background-color:#e7e7e7;
+	margin-left:20px;
+	margin-right:100px;
+	font-family: 隶书;
+	margin-top: 2px;
+}
+
+li:HOVER {
+	background-color: yellow;
+}
+#contain{
+	background-color:#e1e1ff;
+	height: 400px;
+	
+}
+#leftcontain{
+	background-color:#8000ff;
+	margin:8px 0;
+	margin-right:0;
+	height: 400px;
+	width: 700px;
+	float: left;
+	margin-bottom:0;
+	
+}
+.fourdiv{
+	background-color: green;
+	width: 300px;
+	height: 180px;
+	float: left;
+	margin-left:35px;
+	margin-top: 12px;
+	
+}
+
+#midcontain{
+	background-color: red;
+	width: 10px;
+	height: 400px;
+	margin:8px 0px;
+	float: left;
+	margin-bottom:0;
+}
+#rightcontain{
+	background-color: orange;
+	width:248px;
+	height: 400px;
+	margin:8px 0;
+	margin-right:2px;
+	margin-bottom:0;
+	float:left;
+	
+}
+#bottomborder{
+	margin-top:20px;
+	background-color: red;
+	height:10px;
+	
+	clear: both;
+	
+}

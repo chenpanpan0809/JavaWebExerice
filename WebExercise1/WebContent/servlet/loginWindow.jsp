@@ -1,3 +1,4 @@
+<%@page import="java.util.Set"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -24,6 +25,12 @@
 				<a href=""><li>职业规划</li></a>
 				<a href=""><li>经历和感受</li></a>
 				<a href=""><li>我的朋友圈</li></a>
+				<%
+				Set all =(Set)this.getServletContext().getAttribute("online");
+				%>
+				<li>当前访问人数:
+				 <%= all.size()%>
+				</li>
 			</ul>
 		</div>
 		<div id="contain">

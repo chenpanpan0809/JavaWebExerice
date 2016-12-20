@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class EnterRequest
@@ -34,20 +35,23 @@ public class EnterRequest extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		String name = request.getParameter("username");
 		String psword = request.getParameter("password");
-		if ("chenpanpan".equals(name) && "12345".equals(psword)) {
-			/*request.getSession().setAttribute("name", name);*/
+		/*if ("chenpanpan".equals(name) && "12345".equals(psword)) {*/
+			String usered = request.getParameter("username");
 			/*ServletContext context =getServletContext();
 			RequestDispatcher rd = context.getRequestDispatcher("/servlet/loginWindow2.html");
 			rd.forward(request, response);*/
+			HttpSession se = request.getSession();
+			
+			se.setAttribute("usered", usered);
 			response.sendRedirect("/WebExercise1/servlet/loginWindow.jsp");
 			
-		}
+		/*}
 		else {
-			/*RequestDispatcher rd = request.getRequestDispatcher("/servlet/loginOut.jsp");
-			rd.include(request, response);*/
+			RequestDispatcher rd = request.getRequestDispatcher("/servlet/loginOut.jsp");
+			rd.include(request, response);
 			response.sendRedirect("/WebExercise1/servlet/loginOut.jsp");
 			
-		}
+		}*/
 	}
 
 	/**

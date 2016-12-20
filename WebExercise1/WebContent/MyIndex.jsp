@@ -6,9 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>欢迎来到我的首页</title>
 <link rel="stylesheet" href="CSS/dream.css" type="text/css">
-<!-- <script type="text/javascript">
-	alert("您好，请先点击登录");
-	</script> -->
 </head>
 <body>
 

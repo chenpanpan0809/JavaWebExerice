@@ -11,7 +11,7 @@
 alert("请输入用户名");
 </script>
 <%
-		response.setHeader("refresh", "0;URL=/WebExercise/servlet/NewFile.jsp");
+		response.setHeader("refresh", "0;URL=/WebExercise1/servlet/NewFile.jsp");
 		session.invalidate();
 	%>
 </body>

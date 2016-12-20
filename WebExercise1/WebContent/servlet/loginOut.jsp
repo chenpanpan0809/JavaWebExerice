@@ -8,12 +8,12 @@
 </head>
 <body>
 	<%
-		response.setHeader("refresh", "4;URL=/WebExercise/servlet/NewFile.jsp");
+		response.setHeader("refresh", "4;URL=/WebExercise1/servlet/NewFile.jsp");
 		session.invalidate();
 	%>
 	<h3>您输入的密码错误，请从新输入</h3>
 	<h3>
-		如果没有跳转，请点击<a href="/WebExercise/servlet/NewFile.jsp">return</a>
+		如果没有跳转，请点击<a href="/WebExercise1/servlet/NewFile.jsp">return</a>
 	</h3>
 </body>
 </html>

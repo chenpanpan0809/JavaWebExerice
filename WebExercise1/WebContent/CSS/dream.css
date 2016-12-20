@@ -108,6 +108,41 @@ li:HOVER {
 	float:left;
 	
 }
+.Cal {
+    border: 1px solid #999;
+    width: 100%;
+    font-family: Arial;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 180px;
+    background-color: #eee;
+}
+.CalTitle {
+    background-color: #b6b6b6;
+    border-color: #adf;
+    font-family: Arial;
+    font-size: 13px;
+    color: #000;
+    margin-left: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+table {
+    display: table;
+    border-collapse: separate;
+}
+.CalOtherMonthDay {
+    color: gray;
+}
+.CalTodayDay {
+    background-color: #ccc;
+}
 #bottomborder{
 	margin-top:20px;
 	background-color: red;

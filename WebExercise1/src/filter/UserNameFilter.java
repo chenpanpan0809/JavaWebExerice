@@ -50,7 +50,7 @@ public class UserNameFilter implements Filter {
 		}
 		else{
 			HttpServletResponse rp =(HttpServletResponse)response;
-			rp.sendRedirect("/WebExercise1/filter/passfilter.jsp");
+			rp.sendRedirect("/WebExercise1/filter/userfilter.jsp");
 		
 		}
 	}

@@ -2,6 +2,8 @@ package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -33,9 +35,19 @@ public class EnterRequest extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=UTF-8");
+		Map<String, String> userAndpsword = new HashMap<String, String>();
+		userAndpsword.put("chen", "12345");
+		userAndpsword.put("li", "12345");
+		userAndpsword.put("zhang", "1235");
+		userAndpsword.put("huang", "12345");
+		userAndpsword.put("gao", "12345");
+		userAndpsword.put("pan", "12345");
+		for (String na: userAndpsword.keySet()) {
+			String nam = na;
+		}
 		String name = request.getParameter("username");
 		String psword = request.getParameter("password");
-		/*if ("chenpanpan".equals(name) && "12345".equals(psword)) {*/
+		if ("chenpanpan".equals(name)&&"12345".equals(psword) ){
 			String usered = request.getParameter("username");
 			/*ServletContext context =getServletContext();
 			RequestDispatcher rd = context.getRequestDispatcher("/servlet/loginWindow2.html");
@@ -45,13 +57,13 @@ public class EnterRequest extends HttpServlet {
 			se.setAttribute("usered", usered);
 			response.sendRedirect("/WebExercise1/servlet/loginWindow.jsp");
 			
-		/*}
+		}
 		else {
 			RequestDispatcher rd = request.getRequestDispatcher("/servlet/loginOut.jsp");
 			rd.include(request, response);
 			response.sendRedirect("/WebExercise1/servlet/loginOut.jsp");
 			
-		}*/
+		}
 	}
 
 	/**

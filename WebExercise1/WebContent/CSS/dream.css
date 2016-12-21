@@ -20,7 +20,8 @@ body, html {
 }
 
 #title {
-	color: #cfbd1d; float : left;
+	color: #cfbd1d;
+	float: left;
 	font-family: 华文行楷;
 	font-size: 40px;
 	margin-top: 30px;
@@ -28,10 +29,29 @@ body, html {
 	float: left;
 }
 
+.diff1 {
+	display: inline-block;
+	font-weight: bold;
+	color: #c24785;
+	text-shadow: 0 0 1px currentColor, -1px -1px 1px #000, 0 -1px 1px #000,
+		1px -1px 1px #000, 1px 0 1px #000, 1px 1px 1px #000, 0 1px 1px #000,
+		-1px 1px 1px #000, -1px 0 1px #000;
+	-webkit-filter: url(#diff1);
+	filter: url(#diff1); /*background:#def;padding:0 .2em*/
+}
+
+.outlinedB:after {
+	content: 'OutlinedB';
+	top: .3em;
+	color: transparent;
+	text-shadow: 0 0 6px rgba(0, 0, 0, .6), 0 0 8px rgba(0, 0, 0, .8);
+	transform: scaleY(.5);
+	z-index: -1
+}
+
 #blank {
 	background-color: white;
 	height: 10px;
-
 }
 
 #navi {
@@ -41,9 +61,9 @@ body, html {
 	width: 100%;
 	float: left;
 }
-#lise{
-	margin-left:170px;
-	
+
+#lise {
+	margin-left: 170px;
 }
 
 li {
@@ -55,9 +75,9 @@ li {
 }
 
 #lis {
-	background-color:#e7e7e7;
-	margin-left:20px;
-	margin-right:100px;
+	background-color: #e7e7e7;
+	margin-left: 20px;
+	margin-right: 100px;
 	font-family: 隶书;
 	margin-top: 2px;
 }
@@ -65,89 +85,94 @@ li {
 li:HOVER {
 	background-color: yellow;
 }
-#contain{
-	background-color:#e1e1ff;
+
+#contain {
+	background-color: #e1e1ff;
 	height: 400px;
-	
 }
-#leftcontain{
-	background-color:#8000ff;
-	margin:8px 0;
-	margin-right:0;
+
+#leftcontain {
+	background-color: #8000ff;
+	margin: 8px 0;
+	margin-right: 0;
 	height: 400px;
 	width: 700px;
 	float: left;
-	margin-bottom:0;
-	
+	margin-bottom: 0;
 }
-.fourdiv{
+
+.fourdiv {
 	background-color: green;
 	width: 300px;
 	height: 180px;
 	float: left;
-	margin-left:35px;
+	margin-left: 35px;
 	margin-top: 12px;
-	
 }
 
-#midcontain{
+#midcontain {
 	background-color: red;
 	width: 10px;
 	height: 400px;
-	margin:8px 0px;
+	margin: 8px 0px;
 	float: left;
-	margin-bottom:0;
+	margin-bottom: 0;
 }
-#rightcontain{
+
+#rightcontain {
 	background-color: orange;
-	width:248px;
+	width: 248px;
 	height: 400px;
-	margin:8px 0;
-	margin-right:2px;
-	margin-bottom:0;
-	float:left;
-	
+	margin: 8px 0;
+	margin-right: 2px;
+	margin-bottom: 0;
+	float: left;
 }
+
 .Cal {
-    border: 1px solid #999;
-    width: 100%;
-    font-family: Arial;
-    font-size: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 180px;
-    background-color: #eee;
+	border: 1px solid #999;
+	width: 100%;
+	font-family: Arial;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 180px;
+	background-color: #eee;
 }
+
 .CalTitle {
-    background-color: #b6b6b6;
-    border-color: #adf;
-    font-family: Arial;
-    font-size: 13px;
-    color: #000;
-    margin-left: 0;
-    padding: 0;
-    height: 100%;
-    font-weight: bold;
+	background-color: #b6b6b6;
+	border-color: #adf;
+	font-family: Arial;
+	font-size: 13px;
+	color: #000;
+	margin-left: 0;
+	padding: 0;
+	height: 100%;
+	font-weight: bold;
 }
+
 td, th {
-    display: table-cell;
-    vertical-align: inherit;
+	display: table-cell;
+	vertical-align: inherit;
 }
+
 table {
-    display: table;
-    border-collapse: separate;
+	display: table;
+	border-collapse: separate;
 }
+
 .CalOtherMonthDay {
-    color: gray;
+	color: gray;
 }
+
 .CalTodayDay {
-    background-color: #ccc;
+	background-color: #ccc;
 }
-#bottomborder{
-	margin-top:20px;
-	background-color: red;
-	height:10px;
-	
+
+#bottomborder {
+	margin-top: 20px;
+	background-color: orange;
+	height: 60px;
 	clear: both;
-	
 }

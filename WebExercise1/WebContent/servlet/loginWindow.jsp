@@ -7,12 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../CSS/dream.css" type="text/css">
+
 </head>
 <body>
 <div id="box">
 		<div id="header">
 			<img alt="" src="../image/fengye.jpg" style="float: left;">
-			<h2 id="title">欢迎来到我的首页</h2>
+			<h2 id="title" style="font-family:cursive;text-shadow:6px 2px 2px #333;color:deeppink">欢迎来到我的首页</h2>
 			<img alt="" src="../image/02.jpg" style="float: right;">
 		</div>
 		<div id="blank"></div>

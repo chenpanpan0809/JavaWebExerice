@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>欢迎来到我的首页</title>
+<title >欢迎来到我的首页</title>
+<link rel="stylesheet" href="http://hovertree.com/texiao/hoverclock/jquery.hoverclock.2.1.0.css" />
+<script src="http://hovertree.com/ziyuan/jquery/jquery-1.11.3.min.js"></script>
 <link rel="stylesheet" href="CSS/dream.css" type="text/css">
 <script type="text/javascript">
 function loadBlogCalendar(n) {
@@ -32,12 +34,12 @@ function loadBlogDefaultCalendar() {
 
 </script>
 </head>
-<body>
+<body onLoad="startclock()">
 
 	<div id="box">
 		<div id="header">
 			<img alt="" src="image/fengye.jpg" style="float: left;">
-			<h2 id="title">欢迎来到我的首页</h2>
+			<h2 id="title"class="diff1 ">欢迎来到我的首页</h2>
 			<img alt="" src="image/02.jpg" style="float: right;">
 		</div>
 		<div id="blank"></div>
@@ -69,7 +71,7 @@ function loadBlogDefaultCalendar() {
 
 			</div>
 			<div id=midcontain></div>
-			<div id="rightcontain">
+			<div id="rightcontain" style="border: 0px;">
 				<div id="blog-calendar" style="">
 					<table id="blogCalendar" class="Cal" cellspacing="0"
 						cellpadding="0" title="Calendar">
@@ -128,8 +130,8 @@ function loadBlogDefaultCalendar() {
 							<tr>
 								<td class="CalWeekendDay" align="center">18</td>
 								<td align="center">19</td>
-								<td class="CalTodayDay" align="center">20</td>
-								<td align="center">21</td>
+								<td  align="center">20</td>
+								<td align="center" class="CalTodayDay">21</td>
 								<td align="center">22</td>
 								<td align="center">23</td>
 								<td class="CalWeekendDay" align="center">24</td>
@@ -156,7 +158,92 @@ function loadBlogDefaultCalendar() {
 					</table>
 				</div>
 				
-        
+	<!-- 			<div>
+				 <script type="text/javascript">
+<!-- Hide
+  var timerID = null
+  var timerRunning = false
+  function MakeArray(size) 
+  {
+  this.length = size;
+  for(var i = 1; i <= size; i++)
+  {
+  this[i] = "";
+  }
+  return this;
+  }
+  function stopclock (){
+  if(timerRunning)
+  clearTimeout(timerID);
+  timerRunning = false
+  }
+  function showtime () {
+  var now = new Date();
+  var year = now.getYear();
+  var month = now.getMonth() + 1;
+  var date = now.getDate();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  var day = now.getDay();
+  Day = new MakeArray(7);
+  Day[0]="星期天";
+  Day[1]="星期一";
+  Day[2]="星期二";
+  Day[3]="星期三";
+  Day[4]="星期四";
+  Day[5]="星期五";
+  Day[6]="星期六";
+  var timeValue = "";
+  timeValue += year+1900 + "年";
+  timeValue += ((month < 10) ? "0" : "") + month + "月";
+  timeValue += date + "日  ";
+  timeValue += (Day[day]) + "  ";
+  timeValue += ((hours <= 12) ? hours : hours - 12);
+  timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+  timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+  timeValue += (hours < 12) ? "上午" : "下午";
+  document.jsfrm.face.value = timeValue;
+  timerID = setTimeout("showtime()",1000);
+  timerRunning = true
+  }
+  function startclock () {
+  stopclock();
+  showtime();
+  }
+  //
+
+</script>
+ <form name='jsfrm'>
+                    <input type=text name='face' size=34 value='' style="width: 245px; color:green;">
+                  </form>
+				</div>  -->
+
+					<!-- 时钟 -->
+			<div id="hoverclock" class="hoverclock" style="width: 248px;height: 248px;background-color: yellow;border-color: transparent;display: block;top: 0px;left: 0px;float: left;">
+
+<script src="http://hovertree.com/texiao/hoverclock/jquery.hoverclock.2.1.0.js"></script>
+<script>
+$("#hoverclock").hoverclock({
+"h_width":248,
+"h_height":248,
+//"h_hourNumSize": "80",
+// "h_hourNumRadii": "200",
+// "h_hourNumShow": false,
+// "h_minuteNumShow":false,
+"h_hourNumColor": "deeppink",
+"h_backColor": "yellow",
+// "h_borderColor": "gold",
+//"h_frontColor":"red",
+ "h_linkText": "HoverClock" 
+   /* $(".hoverclocklink HoverClock").$("HoverClock").hide();  */
+});
+</script>
+</div>
+		
+			
+	
+	
         </div>
 		<div id="bottomborder"></div>
 	</div>

@@ -35,7 +35,7 @@ public class EnterRequest extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=UTF-8");
-		Map<String, String> userAndpsword = new HashMap<String, String>();
+		/*Map<String, String> userAndpsword = new HashMap<String, String>();
 		userAndpsword.put("chen", "12345");
 		userAndpsword.put("li", "12345");
 		userAndpsword.put("zhang", "1235");
@@ -44,18 +44,18 @@ public class EnterRequest extends HttpServlet {
 		userAndpsword.put("pan", "12345");
 		for (String na: userAndpsword.keySet()) {
 			String nam = na;
-		}
+		}*/
 		String name = request.getParameter("username");
 		String psword = request.getParameter("password");
 		if ("chenpanpan".equals(name)&&"12345".equals(psword) ){
 			String usered = request.getParameter("username");
-			/*ServletContext context =getServletContext();
-			RequestDispatcher rd = context.getRequestDispatcher("/servlet/loginWindow2.html");
-			rd.forward(request, response);*/
+		ServletContext context =getServletContext();
+			RequestDispatcher rd = context.getRequestDispatcher("/servlet/loginWindow.jsp");
+			rd.forward(request, response);
 			HttpSession se = request.getSession();
 			
 			se.setAttribute("usered", usered);
-			response.sendRedirect("/WebExercise1/servlet/loginWindow.jsp");
+			/*response.sendRedirect("/WebExercise1/servlet/loginWindow.jsp");*/
 			
 		}
 		else {

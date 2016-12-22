@@ -15,7 +15,7 @@
 <br/>
 <input name="password" type="password" placeholder="密码(Password):">
 <br/>
-<button type="submit"><h3>提 &nbsp; &nbsp;交(Submit)</h3></button>
+<button type="submit"><h3 class="button" style=" margin-top:0;border: 0px;">提 &nbsp; &nbsp;交(Submit)</h3></button>
 </form>
 
 </div>

@@ -8,11 +8,11 @@
 </head>
 <body>
 <script type="text/javascript">
-alert("尊敬的用户，请先点击登陆！");
+alert("您输入的用户名或密码有误，请从新输入！");
 
 </script>
 <%
-response.setHeader("refresh", "0;URL=/WebExercise1/MyIndex.jsp");
+response.setHeader("refresh", "0;URL=../servlet/NewFile.jsp");
 %>
 </body>
 </html>

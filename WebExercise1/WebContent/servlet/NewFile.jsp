@@ -10,7 +10,7 @@
 <body>
 <div id="pagecontain">
 <h2>登陆(Login)</h2>
-<form action="<%= request.getContextPath() %>/servlet/EnterRequest" method="post" >
+<form action="<%= request.getContextPath() %>/servlet/DbLogin" method="post" >
 <input name="username" type="text" placeholder="用户名(Username):" >
 <br/>
 <input name="password" type="password" placeholder="密码(Password):">

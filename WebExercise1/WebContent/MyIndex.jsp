@@ -38,7 +38,7 @@ function loadBlogDefaultCalendar() {
 
 	<div id="box">
 		<div id="header">
-			<img alt="" src="image/fengye.jpg" style="float: left;">
+			<img alt="" src="image/fengye.jpg" style="float: left;">      
 			<h2 id="title"class="diff1 ">欢迎来到我的首页</h2>
 			<img alt="" src="image/02.jpg" style="float: right;">
 		</div>

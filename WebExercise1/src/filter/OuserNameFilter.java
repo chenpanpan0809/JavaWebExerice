@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 				DispatcherType.INCLUDE, 
 				DispatcherType.ERROR
 		}
-					, urlPatterns = { "/servlet/EnterRequest" })
+					, urlPatterns = { "/servlet/DbLogin" })
 public class OuserNameFilter implements Filter {
 
     /**

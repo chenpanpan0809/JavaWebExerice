@@ -112,7 +112,7 @@
 		<div id="contain">
 			<div id="leftcontain">
 				<div class="fourdiv">
-					<img alt="温馨的幸福" src="../image/25r58PICQzC.jpg" title="温馨的幸福">
+					<a href="http://sweet.snsapp.qq.com/?ptlang=2052#ptlang=2052&module=main"><img alt="温馨的幸福" src="../image/25r58PICQzC.jpg" title="温馨的幸福"></a>
 				</div>
 				<div class="fourdiv">
 					<img alt="" src="../image/picture.jpg" title="成长的足迹">
